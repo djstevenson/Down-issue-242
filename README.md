@@ -2,6 +2,8 @@
 
 A minimal test case of the namespace issues with Down, extracted from a real project (which will be open, but isn't yet, until I get to a certain level of stability with it)
 
+ISSUE LINK: https://github.com/johnxnguyen/Down/issues/242
+
 The issues are shown in HtmlVisitor.swift
 
 ## Build instructions
