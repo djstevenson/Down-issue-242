@@ -4,7 +4,7 @@ A minimal test case of the namespace issues with Down, extracted from a real pro
 
 ISSUE LINK: https://github.com/johnxnguyen/Down/issues/242
 
-The issues are shown in HtmlVisitor.swift
+The issues are shown in HtmlVisitor.swift - in this stripped-down example, it's a simple edit to the Down package's own DebugVisitor.swift
 
 ## Build instructions
 
