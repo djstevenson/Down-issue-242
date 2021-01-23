@@ -3,7 +3,7 @@ import Foundation
 import Down
 import Html
 typealias HtmlNode = Html.Node
-
+typealias DownNode = Down.Node
 
 struct HtmlVisitor: Visitor {
     
@@ -54,7 +54,7 @@ struct HtmlVisitor: Visitor {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(text node: Text) -> String {
+    public func visit(text node: Down.Text) -> String {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
@@ -90,7 +90,7 @@ struct HtmlVisitor: Visitor {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(image node: Image) -> String {
+    public func visit(image node: Down.Image) -> String {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
