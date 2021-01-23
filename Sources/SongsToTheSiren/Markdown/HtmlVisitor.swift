@@ -2,14 +2,12 @@ import Foundation
 
 import Down
 import Html
-typealias HtmlNode = Html.Node
-typealias DownNode = Down.Node
 
 struct HtmlVisitor: Visitor {
     
     typealias Result = String
     
-    private func nodeWithChildren(_ node: Down.Node, value: String) -> String {
+    private func nodeWithChildren(_ node: DownNode, value: String) -> String {
         let children = visitChildren(of: node).joined()
         return "\(value)\(children)"
     }
