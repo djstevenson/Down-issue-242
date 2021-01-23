@@ -1,5 +1,5 @@
 import Down
 
-typealias DownNode = Down.Node
-typealias DownText = Down.Text
-typealias DownImage = Down.Image
+typealias DownNode = Node
+typealias DownText = Text
+typealias DownImage = Image

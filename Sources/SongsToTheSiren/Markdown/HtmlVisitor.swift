@@ -5,90 +5,91 @@ import Html
 
 struct HtmlVisitor: Visitor {
     
-    typealias Result = String
+    typealias Result = HtmlNode
     
-    private func nodeWithChildren(_ node: DownNode, value: String) -> String {
-        let children = visitChildren(of: node).joined()
-        return "\(value)\(children)"
+    private func nodeWithChildren(_ node: DownNode, value: String) -> HtmlNode {
+//        let children = visitChildren(of: node).joined()
+//        return "\(value)\(children)"
+        return HtmlNode()
     }
     
-    public func visit(document node: Document) -> String {
+    public func visit(document node: Document) -> HtmlNode {
         return nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(blockQuote node: BlockQuote) -> String {
+    public func visit(blockQuote node: BlockQuote) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(list node: List) -> String {
+    public func visit(list node: List) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(item node: Item) -> String {
+    public func visit(item node: Item) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(codeBlock node: CodeBlock) -> String {
+    public func visit(codeBlock node: CodeBlock) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(htmlBlock node: HtmlBlock) -> String {
+    public func visit(htmlBlock node: HtmlBlock) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(customBlock node: CustomBlock) -> String {
+    public func visit(customBlock node: CustomBlock) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(paragraph node: Paragraph) -> String {
+    public func visit(paragraph node: Paragraph) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(heading node: Heading) -> String {
+    public func visit(heading node: Heading) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(thematicBreak node: ThematicBreak) -> String {
+    public func visit(thematicBreak node: ThematicBreak) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(text node: Down.Text) -> String {
+    public func visit(text node: DownText) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(softBreak node: SoftBreak) -> String {
+    public func visit(softBreak node: SoftBreak) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(lineBreak node: LineBreak) -> String {
+    public func visit(lineBreak node: LineBreak) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(code node: Code) -> String {
+    public func visit(code node: Code) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(htmlInline node: HtmlInline) -> String {
+    public func visit(htmlInline node: HtmlInline) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(customInline node: CustomInline) -> String {
+    public func visit(customInline node: CustomInline) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(emphasis node: Emphasis) -> String {
+    public func visit(emphasis node: Emphasis) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(strong node: Strong) -> String {
+    public func visit(strong node: Strong) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(link node: Link) -> String {
+    public func visit(link node: Link) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     
-    public func visit(image node: Down.Image) -> String {
+    public func visit(image node: DownImage) -> HtmlNode {
         nodeWithChildren(node, value: "xyzzy \(#line)")
     }
     

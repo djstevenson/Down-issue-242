@@ -1,2 +1,2 @@
 import Html
-typealias HtmlNode = Html.Node
+typealias HtmlNode = Node
